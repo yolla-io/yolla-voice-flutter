@@ -1,0 +1,25 @@
+name: yolla_voice_example
+description: "The example app of the Yolla Voice plugin: a dialer that places calls through the Yolla voice platform."
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.14.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  yolla_voice:
+    path: ../
+  shared_preferences: ^2.5.3
+  material_ui: ^1.11.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

@@ -1,0 +1,28 @@
+name: yolla_voice
+description: "Phone calls from a Flutter app through the Yolla voice platform: outgoing calls with mute, hold, DTMF, audio routes and call quality, with CallKit on iOS and Telecom on Android built in."
+version: 0.1.0
+homepage: https://github.com/yolla-io/yolla-voice-flutter
+publish_to: none
+
+environment:
+  sdk: ^3.14.0
+  flutter: '>=3.50.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  pigeon: ^29.0.1
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.yollacalls.flutter.voice
+        pluginClass: YollaVoicePlugin
+      ios:
+        pluginClass: YollaVoicePlugin

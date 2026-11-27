@@ -1,0 +1,5 @@
+<resources>
+    <!-- The name of the call notification's channel in the system settings. An app translates it with a string of
+         the same name. -->
+    <string name="yolla_voice_notification_channel">Calls</string>
+</resources>
